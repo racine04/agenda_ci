@@ -119,11 +119,11 @@ button:hover {
 
     .form-container {
         width: 90%;
-        margin-top: 10px;
     }
 
     h2 {
-        font-size: 1.4em;
+        font-size: 1.6em;
+        padding-bottom: 7%;
         margin-bottom: 10px;
     }
 
@@ -136,7 +136,7 @@ button:hover {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
     .left {
         height: 15vh;
     }
