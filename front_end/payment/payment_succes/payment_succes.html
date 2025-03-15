@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../event/home/home.css">
+    <title>Confirmation de Paiement</title>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-white">
+
+    
+    <!-- Pop-up animé -->
+    <div id="popup" class="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center animate-bounce">
+            <h2 class="text-xl font-bold text-blue-500">🎉 Félicitations 🎉</h2>
+            <p class="mt-2">Votre paiement a été effectué avec succès !</p>
+            <button onclick="closePopup()" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg">OK</button>
+        </div>
+    </div>
+    
+    
+    
+    <div class="text-center mt-6">
+        <p class="text-lg">Votre paiement a été effectué avec succès</p>
+        <p>Veuillez télécharger votre ticket</p>
+    </div>
+    
+    <div class="border border-blue-500 p-6 mt-4 rounded-lg flex flex-col md:flex-row items-center md:items-start">
+        <img src="../../assets/Qrcode_wikipedia_fr_v2clean.png" alt="QR Code" class="w-32 h-32 md:mr-6">
+        <div>
+            <img src="../../assets/people-office-work-day.jpg" alt="Event" class="w-20 h-20 mb-2">
+            <h3 class="font-bold">Forum des Startups et Entrepreneurs</h3>
+            <p class="text-blue-500">06 Novembre 2025 au 08 Novembre 2025</p>
+            <p class="text-blue-500">De 10H - 12H</p>
+            <p>Parc des Expositions - Abidjan, Port Bouet</p>
+        </div>
+    </div>
+    
+    <button class="mt-6 bg-blue-500 text-white px-6 py-2 rounded-lg">Télécharger</button>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(() => {
+                document.getElementById("popup").classList.remove("hidden");
+            }, 1000);
+        });
+
+        function closePopup() {
+            document.getElementById("popup").classList.add("hidden");
+        }
+    </script>
+</body>
+</html>
