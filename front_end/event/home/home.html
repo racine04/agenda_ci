@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendax</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- Logo -->
+                <a class="navbar-brand logo" href="#">Agendax</a>
+
+                <!-- Bouton sandwich pour mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Liens de navigation -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Événements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-login" href="#">Connexion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-create" href="#">Crée un évènement</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+<!-- Bannière avec image de fond -->
+    <section class="banner">
+        <div class="container">
+            <div class="banner-content text-center">
+                <h2>Ne manquez plus jamais une opportunité de networking !</h2>
+                <div class="search-bar">
+                    <input type="text" placeholder="Recherchez un évènement">
+                    <button class="btn btn-search">Q</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section principale -->
+    <main class="container my-5">
+        
+        
+
+        <!-- Statistiques dans des carrés -->
+        <section class="stats mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="stat-card text-center p-4">
+                        <h3>5</h3>
+                        <p>ÉVÉNEMENTS</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="stat-card text-center p-4">
+                        <h3>10</h3>
+                        <p>CATÉGORIES</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="stat-card text-center p-4">
+                        <h3>150</h3>
+                        <p>UTILISATEURS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Événement en vedette -->
+        <section class="featured-event">
+            <div class="container">
+                <h2 class="section-title">ÉVÉNEMENT EN VEDETTE</h2>
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="../../assets/people-office-work-day.jpg" alt="Forum des Startups et Entrepreneurs 2025">
+                    </div>
+                    <div class="event-details">
+                        <h3 class="event-title">Forum des Startups et Entrepreneurs 2025</h3>
+                        <p class="event-location">Parc des Expositions, - Abidjan, Port Bouet</p>
+                        <p class="event-organizer">Voodoo Group - Agence événementielle</p>
+                        <p class="event-description">
+                            Per vos topologies, rédigés, nos bases. Séance de nouveaux.
+                        </p>
+                        <a href="#" class="btn btn-primary">Achetez un ticket</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tous les événements -->
+        <section class="all-events">
+            <div class="container">
+             <div class="header-ajust">
+                <!-- Titre et sous-titre à gauche -->
+                <div class="header-section">
+                    <h2 class="section-title">TOUS LES ÉVÉNEMENTS</h2>
+                    <p class="section-subtitle">Découvrez les événements du moment et achetez vos places</p>
+                </div>
+        
+                <!-- Catégories à droite -->
+                <div class="categories">
+                    <button class="btn btn-category active">Tous les événements</button>
+                    <button class="btn btn-category">Séminaires</button>
+                    <button class="btn btn-category">Conférences</button>
+                    <button class="btn btn-category">Salon</button>
+                    <button class="btn btn-category">Ateliers</button>
+                    <button class="btn btn-category">Formations</button>
+                    <button class="btn btn-category">Networking</button>
+                    <button class="btn btn-category">Expositions</button>
+                </div>
+             </div>
+        
+                <!-- Liste des événements -->
+                <div class="event-list">
+                    <!-- Événement 1 -->
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="../../assets/people-office-work-day.jpg" alt="Forum des Startups et Entrepreneurs 2025">
+                        </div>
+                        <div class="event-details">
+                            <p class="event-date">
+                                <i class="fas fa-calendar-alt"></i> 06 Nov. 2025 | 10:00 - 12:00
+                            </p>
+                            <h3 class="event-title">Forum des Startups et Entrepreneurs 2025</h3>
+                            <p class="event-location">
+                              <i class="fas fa-map-marker-alt"></i> Parc des Expositions, - Abidjan, Port Bouet
+                             </p>
+                            <p class="event-organizer"><strong>Voodoo Group</strong> - Agence événementielle</p>
+                            <a href="#" class="btn btn-primary">Achetez un ticket</a>
+                        </div>
+                    </div>
+        
+                    <!-- Événement 2 -->
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="../../assets/people-office-work-day.jpg" alt="Forum des Startups et Entrepreneurs 2025">
+                        </div>
+                        <div class="event-details">
+                            <p class="event-date">
+                                <i class="fas fa-calendar-alt"></i> 06 Nov. 2025 | 10:00 - 12:00
+                            </p>
+                            <h3 class="event-title">Forum des Startups et Entrepreneurs 2025</h3>
+                            <p class="event-location">
+                              <i class="fas fa-map-marker-alt"></i> Parc des Expositions, - Abidjan, Port Bouet
+                             </p>
+                            <p class="event-organizer"><strong>Voodoo Group</strong> - Agence événementielle</p>
+                            <a href="#" class="btn btn-primary">Achetez un ticket</a>
+                        </div>
+                    </div>
+        
+                    <!-- Répéter pour chaque événement -->
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="../../assets/people-office-work-day.jpg" alt="Forum des Startups et Entrepreneurs 2025">
+                        </div>
+                        <div class="event-details">
+                            <p class="event-date">
+                                <i class="fas fa-calendar-alt"></i> 06 Nov. 2025 | 10:00 - 12:00
+                            </p>
+                            <h3 class="event-title">Forum des Startups et Entrepreneurs 2025</h3>
+                            <p class="event-location">
+                              <i class="fas fa-map-marker-alt"></i> Parc des Expositions, - Abidjan, Port Bouet
+                             </p>
+                            <p class="event-organizer"><strong>Voodoo Group</strong> - Agence événementielle</p>
+                            <a href="#" class="btn btn-primary">Achetez un ticket</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="../../assets/people-office-work-day.jpg" alt="Forum des Startups et Entrepreneurs 2025">
+                        </div>
+                        <div class="event-details">
+                            <p class="event-date">
+                                <i class="fas fa-calendar-alt"></i> 06 Nov. 2025 | 10:00 - 12:00
+                            </p>
+                            <h3 class="event-title">Forum des Startups et Entrepreneurs 2025</h3>
+                            <p class="event-location">
+                              <i class="fas fa-map-marker-alt"></i> Parc des Expositions, - Abidjan, Port Bouet
+                             </p>
+                            <p class="event-organizer"><strong>Voodoo Group</strong> - Agence événementielle</p>
+                            <a href="#" class="btn btn-primary">Achetez un ticket</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="../../assets/people-office-work-day.jpg" alt="Forum des Startups et Entrepreneurs 2025">
+                        </div>
+                        <div class="event-details">
+                            <p class="event-date">
+                                <i class="fas fa-calendar-alt"></i> 06 Nov. 2025 | 10:00 - 12:00
+                            </p>
+                            <h3 class="event-title">Forum des Startups et Entrepreneurs 2025</h3>
+                            <p class="event-location">
+                              <i class="fas fa-map-marker-alt"></i> Parc des Expositions, - Abidjan, Port Bouet
+                             </p>
+                            <p class="event-organizer"><strong>Voodoo Group</strong> - Agence événementielle</p>
+                            <a href="#" class="btn btn-primary">Achetez un ticket</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="../../assets/people-office-work-day.jpg" alt="Forum des Startups et Entrepreneurs 2025">
+                        </div>
+                        <div class="event-details">
+                            <p class="event-date">
+                                <i class="fas fa-calendar-alt"></i> 06 Nov. 2025 | 10:00 - 12:00
+                            </p>
+                            <h3 class="event-title">Forum des Startups et Entrepreneurs 2025</h3>
+                            <p class="event-location">
+                              <i class="fas fa-map-marker-alt"></i> Parc des Expositions, - Abidjan, Port Bouet
+                             </p>
+                            <p class="event-organizer"><strong>Voodoo Group</strong> - Agence événementielle</p>
+                            <a href="#" class="btn btn-primary">Achetez un ticket</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Bouton "Voir plus" -->
+                <div class="text-center mt-4">
+                    <a href="#" class="btn btn-outline-primary">Voir plus</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nos partenaires -->
+        <section class="partners-services">
+            <div class="container">
+                <!-- Section Nos partenaires -->
+                <div class="partners">
+                    <h2 class="section-title">NOS PARTENAIRES</h2>
+                    <div class="partner-carousel">
+                        <!-- Flèche gauche -->
+                        <button class="carousel-arrow left-arrow" onclick="scrollPartners(-1)">
+                            &#10094; <!-- Flèche gauche -->
+                        </button>
+        
+                        <!-- Liste des partenaires -->
+                        <div class="partner-list" id="partnerList">
+                            <div class="partner-circle">
+                                <img src="../../assets/download.jpeg" alt="Partenaire 1">
+                            </div>
+                            <div class="partner-circle">
+                                <img src="../../assets/download.jpeg" alt="Partenaire 2">
+                            </div>
+                            <div class="partner-circle">
+                                <img src="../../assets/download.jpeg" alt="Partenaire 3">
+                            </div>
+                            <div class="partner-circle">
+                                <img src="../../assets/download.jpeg" alt="Partenaire 4">
+                            </div>
+                            <div class="partner-circle">
+                                <img src="../../assets/download.jpeg" alt="Partenaire 5">
+                            </div>
+                            <div class="partner-circle">
+                                <img src="../../assets/download.jpeg" alt="Partenaire 6">
+                            </div>
+                            <!-- Ajouter d'autres partenaires -->
+                            <div class="partner-circle">
+                                <img src="../../assets/download.jpeg" alt="Partenaire 6">
+                            </div>
+                            <div class="partner-circle">
+                                <img src="../../assets/download.jpeg" alt="Partenaire 6">
+                            </div>
+                            <div class="partner-circle">
+                                <img src="../../assets/download.jpeg" alt="Partenaire 6">
+                            </div>
+                        </div>
+        
+                        <!-- Flèche droite -->
+                        <button class="carousel-arrow right-arrow" onclick="scrollPartners(1)">
+                            &#10095; <!-- Flèche droite -->
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Nos services -->
+                <div class="services">
+                    <h2 class="section-title">NOS SERVICES</h2>
+                    <div class="service-list">
+                        <div class="service-item">
+                            <h3 class="service-title">Trouvez l'événement</h3>
+                            <p class="service-description">
+                                Explorez une grande variété d'événements sur Agendax. Utilisez la barre de recherche pour découvrir ou trouver des événements.
+                            </p>
+                        </div>
+                        <div class="service-item">
+                            <h3 class="service-title">Achetez vos places</h3>
+                            <p class="service-description">
+                                Après avoir choisi votre événement et les tickets nécessaires, procédez au paiement via mobile money. Les tickets achetés seront disponibles.
+                            </p>
+                        </div>
+                        <div class="service-item">
+                            <h3 class="service-title">Profitez</h3>
+                            <p class="service-description">
+                                Pour accéder à l'événement, vous devez scanner le code QR présent sur votre ticket à l'entrée.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comment ca marche -->
+        <section class="how-it-works">
+            <div class="container">
+                <h2 class="section-title">VOUS SOUHAITEZ ACHETER DES TICKETS ?</h2>
+                <div class="steps">
+                    <!-- Étape 1 -->
+                    
+                    <div class="step">
+                        
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">TROUVEZ L’ÉVÉNEMENT</h3>
+                        <p class="step-description">
+                            Explorez une grande variété d’événements sur Agendax. Utilisez la barre de recherche pour découvrir ou trouver des événements.
+                        </p>
+                    </div>
+        
+                    <!-- Étape 2 -->
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">ACHETEZ VOS PLACES</h3>
+                        <p class="step-description">
+                            Après avoir choisi votre événement et les tickets nécessaires, procédez au paiement via mobile money. Les tickets achetés seront disponibles.
+                        </p>
+                    </div>
+        
+                    <!-- Étape 3 -->
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">PROFITEZ</h3>
+                        <p class="step-description">
+                            Pour accéder à l’événement, vous devez scanner le code QR présent sur votre ticket à l’entrée.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Logo et slogan -->
+             <div class="logo-copy">
+            <div class="footer-brand">
+                <h2 class="footer-title">Agendax</h2>
+                <p class="footer-slogan">Ne manquez plus jamais une opportunité de networking !</p>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>Copyright © 2025 G.Skudadbev</p>
+            </div>
+
+        </div>
+
+            <div class="page-link"></div>
+
+            <!-- Liens des pages -->
+            <div class="footer-pages">
+                <h3 class="footer-subtitle">Pages</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        
+
+        
+    
+            
+            
+    
+            
+    
+            <!-- Réseaux sociaux -->
+            <div class="footer-social">
+                <h3 class="footer-subtitle">Rejoignez-nous sur les réseaux sociaux :</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function scrollPartners(direction) {
+            const partnerList = document.getElementById('partnerList');
+            const scrollAmount = 200; // Ajustez cette valeur pour contrôler la distance de défilement
+    
+            if (direction === 1) {
+                // Défilement vers la droite
+                partnerList.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            } else {
+                // Défilement vers la gauche
+                partnerList.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>
